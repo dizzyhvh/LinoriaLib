@@ -5271,7 +5271,7 @@ end
 function Library:UpdateDropdown(dropdownname, table)
 
     for i, v in ipairs(Options) do
-        if v.Type == "Dropdown" and i == dropdown then
+        if v.Type == "Dropdown" and i == dropdownname then
             v:SetValues(table)
         end
     end
